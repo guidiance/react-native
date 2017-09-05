@@ -410,8 +410,8 @@ public class ReactTextShadowNode extends LayoutShadowNode {
     markUpdated();
   }
 
-  @ReactProp(name = ViewProps.LINE_HEIGHT, defaultInt = UNSET)
-  public void setLineHeight(int lineHeight) {
+  @ReactProp(name = ViewProps.LINE_HEIGHT, defaultFloat = UNSET)
+  public void setLineHeight(float lineHeight) {
     mLineHeight = lineHeight == UNSET ? Float.NaN : PixelUtil.toPixelFromSP(lineHeight);
     markUpdated();
   }
